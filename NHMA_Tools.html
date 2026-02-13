@@ -1,0 +1,1619 @@
+
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f7f6; padding: 20px; color: #333; }
+        .header-bar { position: sticky; top: 0; background: white; padding: 15px; z-index: 1000; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: 25px; display: flex; gap: 15px; }
+        input { flex-grow: 1; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 16px; }
+        .download-btn { background: #e74c3c; color: white; border: none; padding: 12px 20px; border-radius: 6px; cursor: pointer; font-weight: bold; transition: 0.3s; }
+        .download-btn:hover { background: #c0392b; }
+        .entity-card { background: white; border-radius: 12px; padding: 25px; margin-bottom: 30px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); display: flex; flex-wrap: wrap; gap: 20px; border-top: 6px solid #2ecc71; page-break-inside: avoid; }
+        .semantic-card { border-top-color: #9b59b6; background: #fdfbff; }
+        .info-side { flex: 2; min-width: 300px; }
+        .media-side { flex: 1; min-width: 250px; max-width: 350px; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+        .card-label { font-size: 0.75em; font-weight: 800; text-transform: uppercase; color: #95a5a6; margin-bottom: 8px; display: block; letter-spacing: 1px; }
+        .subject-url { background: #f8f9fa; padding: 12px; border-radius: 6px; color: #2980b9; font-size: 0.85em; word-break: break-all; display: block; text-decoration: none; margin-bottom: 20px; border-left: 3px solid #3498db; }
+        .prop-row { display: flex; padding: 10px 0; border-bottom: 1px solid #f1f1f1; }
+        .label { font-weight: bold; width: 160px; color: #555; flex-shrink: 0; font-size: 0.9em; }
+        .value-text { word-break: break-word; font-size: 0.95em; line-height: 1.5; }
+        .rdf-media { max-width: 100%; height: auto; border-radius: 8px; cursor: pointer; transition: 0.3s; border: 1px solid #ddd; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .rdf-media:hover { transform: scale(1.03); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+        #lightbox { display: none; position: fixed; z-index: 2000; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); justify-content: center; align-items: center; }
+        #lightbox img { max-width: 90%; max-height: 90%; border: 3px solid white; border-radius: 4px; }
+        .file-separator { border-bottom: 2px solid #34495e; margin: 60px 0 30px 0; text-align: left; padding-bottom: 10px; }
+        .file-separator h3 { margin: 0; color: #2c3e50; text-transform: uppercase; font-size: 1.2em; }
+        @media print { .header-bar { display: none; } .entity-card { border: 1px solid #ddd; box-shadow: none; } }
+    </style>
+</head>
+<body>
+    <div class="header-bar">
+        <input type="text" id="searchInput" onkeyup="filterData()" placeholder="Αναζήτηση σε τίτλους, υλικά, περιγραφές...">
+        <button class="download-btn" onclick="window.print()">Εξαγωγή σε PDF</button>
+    </div>
+    <div id="content">
+<div class="file-separator"><h3> NHMA :: Weaving tool :: 001</h3></div>
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Αντικείμενο</span>
+                <a href="http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/2b98bdb1-6375-4550-8181-e1d676f48e63" target="_blank" class="subject-url">http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/2b98bdb1-6375-4550-8181-e1d676f48e63</a>
+                <div class="prop-row"><span class="label">Τίτλος:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• NHMA :: Weaving tool :: 001</span><span style="display:block; margin-bottom:4px;">• ΝΗΜΑ :: Εργαλείο υφαντικής :: 001</span></div></div><div class="prop-row"><span class="label">Υλικό:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Wood</span></div></div><div class="prop-row"><span class="label">Περιγραφή:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• This spindle is an excellent example of the fusion of artistic creation and religious expression, giving the traditional weaving tool a spiritual dimension. It is decorated with Byzantine-style icons, depicting religious figures such as Christ and archangels, imbuing the object with sanctity and symbolism. The spindle, normally intended for winding thread, here acquires a distinctive spiritual character, making it not only a production tool but also a symbol of faith and tradition.
+
+The icons on the wooden surfaces are meticulously painted with vivid colors and characteristic halos, elements reminiscent of ecclesiastical art, incorporating the centuries-old tradition of Byzantine iconography. The wooden parts of the spindle also feature carvings on the corners, which enhance the traditional aesthetic and reflect the care the craftsmen put into its construction. Its sturdy, triangular base ensures that each side of the spindle can be displayed individually, allowing the viewer to fully appreciate its artistic and spiritual value.
+
+The Penelope Gandhi Foundation, which collects and showcases such traditional tools, aims to preserve the heritage of weaving and highlight its connection with spirituality. Through this spindle, the artistic value, symbolic significance, and social role of the weaving craft are honored, making this spindle a symbol of both the cultural and religious heritage of Crete.</span><span style="display:block; margin-bottom:4px;">• Αυτή η ανέμη αποτελεί ένα εξαιρετικό παράδειγμα της σύζευξης καλλιτεχνικής δημιουργίας και θρησκευτικής έκφρασης, αποδίδοντας στο παραδοσιακό εργαλείο της υφαντικής μια πνευματική διάσταση. Είναι διακοσμημένη με βυζαντινής τεχνοτροπίας αγιογραφίες, που απεικονίζουν θρησκευτικές μορφές, όπως τον Χριστό και αρχαγγέλους, προσδίδοντας ιερότητα και συμβολισμό στο αντικείμενο. Η ανέμη, που προορίζεται κανονικά για το τύλιγμα του νήματος, εδώ αποκτά έναν ξεχωριστό πνευματικό χαρακτήρα, κάνοντας την όχι μόνο εργαλείο παραγωγής αλλά και σύμβολο πίστης και παράδοσης.
+
+Οι αγιογραφίες στις ξύλινες επιφάνειες είναι λεπτομερώς ζωγραφισμένες, με ζωντανά χρώματα και χαρακτηριστικά φωτοστέφανα, στοιχεία που θυμίζουν εκκλησιαστική τέχνη και ενσωματώνουν τη μακραίωνη παράδοση των βυζαντινών εικόνων. Τα ξύλινα μέρη της ανέμης φέρουν επίσης σκαλίσματα στις γωνίες, που ενισχύουν την παραδοσιακή αισθητική και δείχνουν τη φροντίδα που αφιέρωναν οι τεχνίτες στην κατασκευή της. Η σταθερή, τριγωνική βάση της εξασφαλίζει ότι κάθε πλευρά της ανέμης μπορεί να προβληθεί ξεχωριστά, επιτρέποντας στον θεατή να εκτιμήσει πλήρως την καλλιτεχνική και πνευματική της αξία.
+
+Η αποστολή Πηνελόπη Gandhi, που συλλέγει και αναδεικνύει τέτοια παραδοσιακά εργαλεία, επιδιώκει να διατηρήσει ζωντανή την κληρονομιά της υφαντικής και να αναδείξει τη σύνδεση της με την πνευματικότητα. Μέσω αυτής της ανέμης, τιμάται η καλλιτεχνική αξία, η συμβολική σημασία και ο κοινωνικός ρόλος της υφαντικής τέχνης, καθιστώντας την ανέμη αυτή σύμβολο τόσο της πολιτιστικής όσο και της θρησκευτικής κληρονομιάς της Κρήτης.</span></div></div><div class="prop-row"><span class="label">Τοποθεσία:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://www.geonames.org/258763/crete.html" target="_blank">https://www.geonames.org/258763/crete.html</a></span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Αντικείμενο</span>
+                <a href="http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/2b98bdb1-6375-4550-8181-e1d676f48e63&tab=summary" target="_blank" class="subject-url">http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/2b98bdb1-6375-4550-8181-e1d676f48e63&tab=summary</a>
+                <div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span><span style="display:block; margin-bottom:4px;">• Foundation for Research And Technology - Institute of Computer Science</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/11561868/files/Weaving_tools_001_9.jpg" target="_blank" class="subject-url">https://zenodo.org/records/11561868/files/Weaving_tools_001_9.jpg</a>
+                <div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 1388x2048</span><span style="display:block; margin-bottom:4px;">• 1309449 bytes</span></div></div><div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/11561868/files/Weaving_tools_001_9.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/11561868/files/Weaving_tools_001_9.jpg')"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/11561868/files/Weaving_tools_001_4.jpg" target="_blank" class="subject-url">https://zenodo.org/records/11561868/files/Weaving_tools_001_4.jpg</a>
+                <div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 1388x2048</span><span style="display:block; margin-bottom:4px;">• 1209813 bytes</span></div></div><div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/11561868/files/Weaving_tools_001_4.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/11561868/files/Weaving_tools_001_4.jpg')"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/11561868/files/Weaving_tools_001_2.jpg" target="_blank" class="subject-url">https://zenodo.org/records/11561868/files/Weaving_tools_001_2.jpg</a>
+                <div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span></div></div><div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 1191193 bytes</span><span style="display:block; margin-bottom:4px;">• 1388x2048</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/11561868/files/Weaving_tools_001_2.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/11561868/files/Weaving_tools_001_2.jpg')"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/11561868/files/Weaving_tools_001_6.jpg" target="_blank" class="subject-url">https://zenodo.org/records/11561868/files/Weaving_tools_001_6.jpg</a>
+                <div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span></div></div><div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 1388x2048</span><span style="display:block; margin-bottom:4px;">• 1255293 bytes</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/11561868/files/Weaving_tools_001_6.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/11561868/files/Weaving_tools_001_6.jpg')"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/11561868/files/Weaving_tools_001_8.jpg" target="_blank" class="subject-url">https://zenodo.org/records/11561868/files/Weaving_tools_001_8.jpg</a>
+                <div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 1388x2048</span><span style="display:block; margin-bottom:4px;">• 1314882 bytes</span></div></div><div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/11561868/files/Weaving_tools_001_8.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/11561868/files/Weaving_tools_001_8.jpg')"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/11561868/files/Weaving_tools_001_7.jpg" target="_blank" class="subject-url">https://zenodo.org/records/11561868/files/Weaving_tools_001_7.jpg</a>
+                <div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span></div></div><div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 1316610 bytes</span><span style="display:block; margin-bottom:4px;">• 1388x2048</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/11561868/files/Weaving_tools_001_7.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/11561868/files/Weaving_tools_001_7.jpg')"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/11561868/files/Weaving_tools_001_5.jpg" target="_blank" class="subject-url">https://zenodo.org/records/11561868/files/Weaving_tools_001_5.jpg</a>
+                <div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span></div></div><div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 1283882 bytes</span><span style="display:block; margin-bottom:4px;">• 1388x2048</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/11561868/files/Weaving_tools_001_5.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/11561868/files/Weaving_tools_001_5.jpg')"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/11561868/files/Weaving_tools_001_3.jpg" target="_blank" class="subject-url">https://zenodo.org/records/11561868/files/Weaving_tools_001_3.jpg</a>
+                <div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 1197961 bytes</span><span style="display:block; margin-bottom:4px;">• 1388x2048</span></div></div><div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/11561868/files/Weaving_tools_001_3.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/11561868/files/Weaving_tools_001_3.jpg')"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/11561868/files/Weaving_tools_001_10.jpg" target="_blank" class="subject-url">https://zenodo.org/records/11561868/files/Weaving_tools_001_10.jpg</a>
+                <div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span></div></div><div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 1259259 bytes</span><span style="display:block; margin-bottom:4px;">• 1388x2048</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/11561868/files/Weaving_tools_001_10.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/11561868/files/Weaving_tools_001_10.jpg')"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300387427" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300387427</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• products</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/11561868/files/Weaving_tools_001_1.jpg" target="_blank" class="subject-url">https://zenodo.org/records/11561868/files/Weaving_tools_001_1.jpg</a>
+                <div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span></div></div><div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 1325x2048</span><span style="display:block; margin-bottom:4px;">• 1182726 bytes</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/11561868/files/Weaving_tools_001_1.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/11561868/files/Weaving_tools_001_1.jpg')"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300386843" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300386843</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• textile art (visual works)</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://semantics.gr/authorities/ekt-unesco/1728453957" target="_blank" class="subject-url">http://semantics.gr/authorities/ekt-unesco/1728453957</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Παραδοσιακή τεχνολογία</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://semantics.gr/authorities/ekt-item-types/ergaleia-kai-eksoplismos" target="_blank" class="subject-url">http://semantics.gr/authorities/ekt-item-types/ergaleia-kai-eksoplismos</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Εργαλεία και εξοπλισμός</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300122241" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300122241</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• tools</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        <div class="file-separator"><h3> NHMA :: Weaving tool :: 011</h3></div>
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Αντικείμενο</span>
+                <a href="http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/2cee4f59-1d35-467a-9059-a357172b247e" target="_blank" class="subject-url">http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/2cee4f59-1d35-467a-9059-a357172b247e</a>
+                <div class="prop-row"><span class="label">Περιγραφή:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Ξύλινη ρόκα υφαντικής κατασκευασμένη με προσοχή και δεξιοτεχνία. Η ρόκα αυτή αποτελεί μέρος της συλλογής της Αποστολής Πηνελόπη Gandhi. Μπορεί να χρησιμοποιηθεί τόσο για πρακτικούς σκοπούς στην υφαντική όσο και ως διακοσμητικό στοιχείο που προσθέτει μια παραδοσιακή πινελιά σε κάθε χώρο. </span><span style="display:block; margin-bottom:4px;">• A wooden weaving distaff crafted with care and skill. This distaff is part of the Penelope Gandhi Mission collection. It can be used both for practical weaving purposes and as a decorative element that adds a traditional touch to any space.</span></div></div><div class="prop-row"><span class="label">Τίτλος:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• NHMA :: Weaving tool :: 011</span><span style="display:block; margin-bottom:4px;">• ΝΗΜΑ :: Εργαλείο υφαντικής :: 011</span></div></div><div class="prop-row"><span class="label">Υλικό:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Wood</span></div></div><div class="prop-row"><span class="label">Τοποθεσία:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://www.geonames.org/258763/crete.html" target="_blank">https://www.geonames.org/258763/crete.html</a></span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Αντικείμενο</span>
+                <a href="http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/2cee4f59-1d35-467a-9059-a357172b247e&tab=summary" target="_blank" class="subject-url">http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/2cee4f59-1d35-467a-9059-a357172b247e&tab=summary</a>
+                <div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span><span style="display:block; margin-bottom:4px;">• Foundation for Research And Technology - Institute of Computer Science</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/11561868/files/Weaving_tools_011_2.jpg" target="_blank" class="subject-url">https://zenodo.org/records/11561868/files/Weaving_tools_011_2.jpg</a>
+                <div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div><div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 1123723 bytes</span><span style="display:block; margin-bottom:4px;">• 1219x2048</span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/11561868/files/Weaving_tools_011_2.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/11561868/files/Weaving_tools_011_2.jpg')"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/11561868/files/Weaving_tools_011_1.jpg" target="_blank" class="subject-url">https://zenodo.org/records/11561868/files/Weaving_tools_011_1.jpg</a>
+                <div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span></div></div><div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 1219x2048</span><span style="display:block; margin-bottom:4px;">• 1132706 bytes</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/11561868/files/Weaving_tools_011_1.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/11561868/files/Weaving_tools_011_1.jpg')"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300122241" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300122241</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• tools </span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://semantics.gr/authorities/craft-item-types/1708755776" target="_blank" class="subject-url">http://semantics.gr/authorities/craft-item-types/1708755776</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">•  Distaff</span><span style="display:block; margin-bottom:4px;">• Ρόκα</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300387427" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300387427</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• products</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300386843" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300386843</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• textile art (visual works)</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://semantics.gr/authorities/ekt-unesco/1728453957" target="_blank" class="subject-url">http://semantics.gr/authorities/ekt-unesco/1728453957</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Παραδοσιακή τεχνολογία</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://semantics.gr/authorities/ekt-item-types/ergaleia-kai-eksoplismos" target="_blank" class="subject-url">http://semantics.gr/authorities/ekt-item-types/ergaleia-kai-eksoplismos</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Εργαλεία και εξοπλισμός</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        <div class="file-separator"><h3> NHMA :: Weaving tool :: 003</h3></div>
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Αντικείμενο</span>
+                <a href="http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/427e344c-c1f4-40fd-afca-2529490e0bbb" target="_blank" class="subject-url">http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/427e344c-c1f4-40fd-afca-2529490e0bbb</a>
+                <div class="prop-row"><span class="label">Τίτλος:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• ΝΗΜΑ :: Εργαλείο υφαντικής :: 003</span><span style="display:block; margin-bottom:4px;">• NHMA :: Weaving tool :: 003</span></div></div><div class="prop-row"><span class="label">Τοποθεσία:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://www.geonames.org/258763/crete.html" target="_blank">https://www.geonames.org/258763/crete.html</a></span></div></div><div class="prop-row"><span class="label">Υλικό:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Wood</span></div></div><div class="prop-row"><span class="label">Περιγραφή:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• A wooden weaving distaff crafted with care and skill. This distaff is part of the Penelope Gandhi Mission collection. It can be used both for practical weaving purposes and as a decorative element that adds a traditional touch to any space.</span><span style="display:block; margin-bottom:4px;">• Ξύλινη ρόκα υφαντικής κατασκευασμένη με προσοχή και δεξιοτεχνία. Η ρόκα αυτή αποτελεί μέρος της συλλογής της Αποστολής Πηνελόπη Gandhi. Μπορεί να χρησιμοποιηθεί τόσο για πρακτικούς σκοπούς στην υφαντική όσο και ως διακοσμητικό στοιχείο που προσθέτει μια παραδοσιακή πινελιά σε κάθε χώρο. </span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Αντικείμενο</span>
+                <a href="http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/427e344c-c1f4-40fd-afca-2529490e0bbb&tab=summary" target="_blank" class="subject-url">http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/427e344c-c1f4-40fd-afca-2529490e0bbb&tab=summary</a>
+                <div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Foundation for Research And Technology - Institute of Computer Science</span><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/11561868/files/Weaving_tools_003_1.jpg" target="_blank" class="subject-url">https://zenodo.org/records/11561868/files/Weaving_tools_003_1.jpg</a>
+                <div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div><div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 1074x2048</span><span style="display:block; margin-bottom:4px;">• 720481 bytes</span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/11561868/files/Weaving_tools_003_1.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/11561868/files/Weaving_tools_003_1.jpg')"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/11561868/files/Weaving_tools_003_2.jpg" target="_blank" class="subject-url">https://zenodo.org/records/11561868/files/Weaving_tools_003_2.jpg</a>
+                <div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div><div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 1074x2048</span><span style="display:block; margin-bottom:4px;">• 710320 bytes</span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/11561868/files/Weaving_tools_003_2.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/11561868/files/Weaving_tools_003_2.jpg')"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://semantics.gr/authorities/craft-item-types/1708755776" target="_blank" class="subject-url">http://semantics.gr/authorities/craft-item-types/1708755776</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Ρόκα </span><span style="display:block; margin-bottom:4px;">• Distaff </span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300387427" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300387427</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• products</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300386843" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300386843</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• textile art (visual works)</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://semantics.gr/authorities/ekt-unesco/1728453957" target="_blank" class="subject-url">http://semantics.gr/authorities/ekt-unesco/1728453957</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Παραδοσιακή τεχνολογία</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://semantics.gr/authorities/ekt-item-types/ergaleia-kai-eksoplismos" target="_blank" class="subject-url">http://semantics.gr/authorities/ekt-item-types/ergaleia-kai-eksoplismos</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Εργαλεία και εξοπλισμός</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300122241" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300122241</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• tools</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        <div class="file-separator"><h3> NHMA :: Weaving tool :: 012</h3></div>
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Αντικείμενο</span>
+                <a href="http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/49103844-75e2-4ad5-8a64-7cabc9f4512f" target="_blank" class="subject-url">http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/49103844-75e2-4ad5-8a64-7cabc9f4512f</a>
+                <div class="prop-row"><span class="label">Τίτλος:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• NHMA :: Weaving tool :: 012</span><span style="display:block; margin-bottom:4px;">• ΝΗΜΑ :: Εργαλείο υφαντικής :: 012</span></div></div><div class="prop-row"><span class="label">Υλικό:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Wood</span></div></div><div class="prop-row"><span class="label">Τοποθεσία:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://www.geonames.org/258763/crete.html" target="_blank">https://www.geonames.org/258763/crete.html</a></span></div></div><div class="prop-row"><span class="label">Περιγραφή:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• A wooden weaving distaff crafted with care and skill. This distaff is part of the Penelope Gandhi Mission collection. It can be used both for practical weaving purposes and as a decorative element that adds a traditional touch to any space.</span><span style="display:block; margin-bottom:4px;">• Ξύλινη ρόκα υφαντικής κατασκευασμένη με προσοχή και δεξιοτεχνία. Η ρόκα αυτή αποτελεί μέρος της συλλογής της Αποστολής Πηνελόπη Gandhi. Μπορεί να χρησιμοποιηθεί τόσο για πρακτικούς σκοπούς στην υφαντική όσο και ως διακοσμητικό στοιχείο που προσθέτει μια παραδοσιακή πινελιά σε κάθε χώρο. </span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Αντικείμενο</span>
+                <a href="http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/49103844-75e2-4ad5-8a64-7cabc9f4512f&tab=summary" target="_blank" class="subject-url">http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/49103844-75e2-4ad5-8a64-7cabc9f4512f&tab=summary</a>
+                <div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span><span style="display:block; margin-bottom:4px;">• Foundation for Research And Technology - Institute of Computer Science</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/11561868/files/Weaving_tools_012_1.jpg" target="_blank" class="subject-url">https://zenodo.org/records/11561868/files/Weaving_tools_012_1.jpg</a>
+                <div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span></div></div><div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 1099x2048</span><span style="display:block; margin-bottom:4px;">• 936434 bytes</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/11561868/files/Weaving_tools_012_1.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/11561868/files/Weaving_tools_012_1.jpg')"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/11561868/files/Weaving_tools_012_2.jpg" target="_blank" class="subject-url">https://zenodo.org/records/11561868/files/Weaving_tools_012_2.jpg</a>
+                <div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div><div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 941344 bytes</span><span style="display:block; margin-bottom:4px;">• 1099x2048</span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/11561868/files/Weaving_tools_012_2.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/11561868/files/Weaving_tools_012_2.jpg')"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300122241" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300122241</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• tools </span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://semantics.gr/authorities/craft-item-types/1708755776" target="_blank" class="subject-url">http://semantics.gr/authorities/craft-item-types/1708755776</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Distaff</span><span style="display:block; margin-bottom:4px;">• Ρόκα</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300387427" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300387427</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• products</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300386843" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300386843</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• textile art (visual works)</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://semantics.gr/authorities/ekt-unesco/1728453957" target="_blank" class="subject-url">http://semantics.gr/authorities/ekt-unesco/1728453957</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Παραδοσιακή τεχνολογία</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://semantics.gr/authorities/ekt-item-types/ergaleia-kai-eksoplismos" target="_blank" class="subject-url">http://semantics.gr/authorities/ekt-item-types/ergaleia-kai-eksoplismos</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Εργαλεία και εξοπλισμός</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        <div class="file-separator"><h3> NHMA :: Weaving tool :: 005</h3></div>
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Αντικείμενο</span>
+                <a href="http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/612ccd2f-bf4b-45fb-b90e-498ab5bdecd4" target="_blank" class="subject-url">http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/612ccd2f-bf4b-45fb-b90e-498ab5bdecd4</a>
+                <div class="prop-row"><span class="label">Τίτλος:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• ΝΗΜΑ :: Εργαλείο υφαντικής :: 005</span><span style="display:block; margin-bottom:4px;">• NHMA :: Weaving tool :: 005</span></div></div><div class="prop-row"><span class="label">Υλικό:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Wood</span></div></div><div class="prop-row"><span class="label">Περιγραφή:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• A wooden weaving distaff crafted with care and skill. This distaff is part of the Penelope Gandhi Mission collection. It can be used both for practical weaving purposes and as a decorative element that adds a traditional touch to any space.</span><span style="display:block; margin-bottom:4px;">• Ξύλινη ρόκα υφαντικής κατασκευασμένη με προσοχή και δεξιοτεχνία. Η ρόκα αυτή αποτελεί μέρος της συλλογής της Αποστολής Πηνελόπη Gandhi. Μπορεί να χρησιμοποιηθεί τόσο για πρακτικούς σκοπούς στην υφαντική όσο και ως διακοσμητικό στοιχείο που προσθέτει μια παραδοσιακή πινελιά σε κάθε χώρο. </span></div></div><div class="prop-row"><span class="label">Τοποθεσία:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://www.geonames.org/258763/crete.html" target="_blank">https://www.geonames.org/258763/crete.html</a></span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Αντικείμενο</span>
+                <a href="http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/612ccd2f-bf4b-45fb-b90e-498ab5bdecd4&tab=summary" target="_blank" class="subject-url">http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/612ccd2f-bf4b-45fb-b90e-498ab5bdecd4&tab=summary</a>
+                <div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span><span style="display:block; margin-bottom:4px;">• Foundation for Research And Technology - Institute of Computer Science</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/11561868/files/Weaving_tools_005_1.jpg" target="_blank" class="subject-url">https://zenodo.org/records/11561868/files/Weaving_tools_005_1.jpg</a>
+                <div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span></div></div><div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 800660 bytes</span><span style="display:block; margin-bottom:4px;">• 1074x2048</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/11561868/files/Weaving_tools_005_1.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/11561868/files/Weaving_tools_005_1.jpg')"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/11561868/files/Weaving_tools_005_2.jpg" target="_blank" class="subject-url">https://zenodo.org/records/11561868/files/Weaving_tools_005_2.jpg</a>
+                <div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div><div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 793789 bytes</span><span style="display:block; margin-bottom:4px;">• 1074x2048</span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/11561868/files/Weaving_tools_005_2.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/11561868/files/Weaving_tools_005_2.jpg')"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300122241" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300122241</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• tools </span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://semantics.gr/authorities/craft-item-types/1708755776" target="_blank" class="subject-url">http://semantics.gr/authorities/craft-item-types/1708755776</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Ρόκα </span><span style="display:block; margin-bottom:4px;">• Distaff</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300387427" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300387427</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• products</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300386843" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300386843</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• textile art (visual works)</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://semantics.gr/authorities/ekt-unesco/1728453957" target="_blank" class="subject-url">http://semantics.gr/authorities/ekt-unesco/1728453957</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Παραδοσιακή τεχνολογία</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://semantics.gr/authorities/ekt-item-types/ergaleia-kai-eksoplismos" target="_blank" class="subject-url">http://semantics.gr/authorities/ekt-item-types/ergaleia-kai-eksoplismos</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Εργαλεία και εξοπλισμός</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        <div class="file-separator"><h3> NHMA :: Weaving tool :: 015</h3></div>
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Αντικείμενο</span>
+                <a href="http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/8904cf37-32a0-42fb-a101-86e75f500aa8" target="_blank" class="subject-url">http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/8904cf37-32a0-42fb-a101-86e75f500aa8</a>
+                <div class="prop-row"><span class="label">Τίτλος:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• ΝΗΜΑ :: Εργαλείο υφαντικής :: 015</span><span style="display:block; margin-bottom:4px;">• NHMA :: Weaving tool :: 015</span></div></div><div class="prop-row"><span class="label">Περιγραφή:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• The traditional Cretan loom displayed here is an exceptional example of the island’s rich weaving heritage and is part of the Penelope Gandhi Mission. Made from natural materials, primarily wood, the loom features a simple yet durable design, tailored for daily use. Particularly striking are the intricate carvings and decorative elements that adorn the loom, revealing the artisans' dedication to their craft and respect for the tool itself. The loom's wooden parts are decorated with detailed geometric patterns, flowers, and leaves, all hand-carved by skilled artisans. These engraved details serve not only aesthetic purposes but often carry symbolic significance. The motifs are chosen to provide protection to the weaver and ensure productive outcomes, while in some cases, they reflect family or local symbols, giving the loom a unique “identity” that unites generations and communities.
+
+This loom is not merely a tool for producing textiles but a valuable vessel of tradition and culture. It reflects the memory and values of Cretan communities, the self-sufficiency, and the social life of women’s communities, who used the art of weaving to create their daily fabrics. Through the collection and promotion of such traditional tools, the Penelope Gandhi Mission seeks to keep this heritage alive and to showcase the multidimensional value of the loom as a work of art, a symbol of identity, and an object with enduring social and cultural significance.</span><span style="display:block; margin-bottom:4px;">• Ο παραδοσιακός κρητικός αργαλειός που παρουσιάζεται εδώ είναι ένα εξαιρετικό δείγμα της πλούσιας υφαντικής κληρονομιάς του νησιού και ανήκει στην Αποστολή Πηνελόπη Gandhi. Κατασκευασμένος από φυσικά υλικά, κυρίως ξύλο, ο αργαλειός φέρει λιτή αλλά και ανθεκτική σχεδίαση, προσαρμοσμένη για καθημερινή χρήση.
+
+Ιδιαίτερα ξεχωρίζουν τα περίτεχνα σκαλίσματα και διακοσμητικά στοιχεία που κοσμούν τον αργαλειό, αποκαλύπτοντας την αφοσίωση των τεχνιτών στην τέχνη τους και τον σεβασμό προς το εργαλείο αυτό. Τα ξύλινα μέρη του αργαλειού διακοσμούνται με λεπτομερή γεωμετρικά μοτίβα, λουλούδια και φύλλα, τα οποία χαράσσονται στο χέρι από έμπειρους τεχνίτες. Αυτές οι εγχάρακτες λεπτομέρειες δεν εξυπηρετούν μόνο αισθητικούς σκοπούς, αλλά συχνά έχουν και συμβολική σημασία. Τα μοτίβα επιλέγονται έτσι ώστε να προσφέρουν προστασία στην υφάντρα και να ευνοούν την παραγωγή, ενώ σε ορισμένες περιπτώσεις αποτυπώνουν οικογενειακά ή τοπικά σύμβολα, προσδίδοντας στον αργαλειό μια μοναδική «ταυτότητα» που ενώνει γενιές και κοινότητες.
+
+Ο αργαλειός αυτός δεν είναι απλά ένα εργαλείο παραγωγής υφαντών, αλλά ένας πολύτιμος φορέας παράδοσης και πολιτισμού. Αντικατοπτρίζει τη μνήμη και τις αξίες των κρητικών κοινοτήτων, την αυτάρκεια και την κοινωνική ζωή των γυναικείων κοινοτήτων, που χρησιμοποιούσαν την υφαντική τέχνη για να παράγουν τα καθημερινά τους υφάσματα. Η αποστολή Πηνελόπη Gandhi, μέσω της συλλογής και ανάδειξης τέτοιων παραδοσιακών εργαλείων, επιδιώκει να διατηρήσει ζωντανή αυτή την κληρονομιά και να προβάλλει την πολυδιάστατη αξία του αργαλειού ως έργο τέχνης, σύμβολο ταυτότητας και αντικείμενο με διαχρονική κοινωνική και πολιτιστική σημασία.</span></div></div><div class="prop-row"><span class="label">Υλικό:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Wood</span></div></div><div class="prop-row"><span class="label">Τοποθεσία:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://www.geonames.org/258763/crete.html" target="_blank">https://www.geonames.org/258763/crete.html</a></span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Αντικείμενο</span>
+                <a href="http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/8904cf37-32a0-42fb-a101-86e75f500aa8&tab=summary" target="_blank" class="subject-url">http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/8904cf37-32a0-42fb-a101-86e75f500aa8&tab=summary</a>
+                <div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Foundation for Research And Technology - Institute of Computer Science</span><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/13283645/files/Weaving_tools_015_7.jpg" target="_blank" class="subject-url">https://zenodo.org/records/13283645/files/Weaving_tools_015_7.jpg</a>
+                <div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span></div></div><div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 3442370 bytes</span><span style="display:block; margin-bottom:4px;">• 4954x3302</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/13283645/files/Weaving_tools_015_7.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/13283645/files/Weaving_tools_015_7.jpg')"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/13283645/files/Weaving_tools_015_13.jpg" target="_blank" class="subject-url">https://zenodo.org/records/13283645/files/Weaving_tools_015_13.jpg</a>
+                <div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 3302x4954</span><span style="display:block; margin-bottom:4px;">• 5925434 bytes</span></div></div><div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/13283645/files/Weaving_tools_015_13.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/13283645/files/Weaving_tools_015_13.jpg')"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/13283645/files/Weaving_tools_015_12.jpg" target="_blank" class="subject-url">https://zenodo.org/records/13283645/files/Weaving_tools_015_12.jpg</a>
+                <div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div><div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span></div></div><div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 3239x4050</span><span style="display:block; margin-bottom:4px;">• 4612539 bytes</span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/13283645/files/Weaving_tools_015_12.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/13283645/files/Weaving_tools_015_12.jpg')"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/13283645/files/Weaving_tools_015_6.jpg" target="_blank" class="subject-url">https://zenodo.org/records/13283645/files/Weaving_tools_015_6.jpg</a>
+                <div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div><div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 4661x3200</span><span style="display:block; margin-bottom:4px;">• 2414162 bytes</span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/13283645/files/Weaving_tools_015_6.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/13283645/files/Weaving_tools_015_6.jpg')"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/13283645/files/Weaving_tools_015_8.jpg" target="_blank" class="subject-url">https://zenodo.org/records/13283645/files/Weaving_tools_015_8.jpg</a>
+                <div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div><div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 4597605 bytes</span><span style="display:block; margin-bottom:4px;">• 4954x3302</span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/13283645/files/Weaving_tools_015_8.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/13283645/files/Weaving_tools_015_8.jpg')"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/13283645/files/Weaving_tools_015_17.jpg" target="_blank" class="subject-url">https://zenodo.org/records/13283645/files/Weaving_tools_015_17.jpg</a>
+                <div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 1852624 bytes</span><span style="display:block; margin-bottom:4px;">• 3947x2435</span></div></div><div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/13283645/files/Weaving_tools_015_17.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/13283645/files/Weaving_tools_015_17.jpg')"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/13283645/files/Weaving_tools_015_5.jpg" target="_blank" class="subject-url">https://zenodo.org/records/13283645/files/Weaving_tools_015_5.jpg</a>
+                <div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div><div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 2225940 bytes</span><span style="display:block; margin-bottom:4px;">• 3171x3229</span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/13283645/files/Weaving_tools_015_5.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/13283645/files/Weaving_tools_015_5.jpg')"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/13283645/files/Weaving_tools_015_15.jpg" target="_blank" class="subject-url">https://zenodo.org/records/13283645/files/Weaving_tools_015_15.jpg</a>
+                <div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span></div></div><div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 2307468 bytes</span><span style="display:block; margin-bottom:4px;">• 3145x2050</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/13283645/files/Weaving_tools_015_15.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/13283645/files/Weaving_tools_015_15.jpg')"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/13283645/files/Weaving_tools_015_2.jpg" target="_blank" class="subject-url">https://zenodo.org/records/13283645/files/Weaving_tools_015_2.jpg</a>
+                <div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div><div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 5725430 bytes</span><span style="display:block; margin-bottom:4px;">• 4808x2576</span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/13283645/files/Weaving_tools_015_2.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/13283645/files/Weaving_tools_015_2.jpg')"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/13283645/files/Weaving_tools_015_3.jpg" target="_blank" class="subject-url">https://zenodo.org/records/13283645/files/Weaving_tools_015_3.jpg</a>
+                <div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span></div></div><div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 4192x2605</span><span style="display:block; margin-bottom:4px;">• 3744914 bytes</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/13283645/files/Weaving_tools_015_3.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/13283645/files/Weaving_tools_015_3.jpg')"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/13283645/files/Weaving_tools_015_10.jpg" target="_blank" class="subject-url">https://zenodo.org/records/13283645/files/Weaving_tools_015_10.jpg</a>
+                <div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div><div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 4954x3302</span><span style="display:block; margin-bottom:4px;">• 3552039 bytes</span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/13283645/files/Weaving_tools_015_10.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/13283645/files/Weaving_tools_015_10.jpg')"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/13283645/files/Weaving_tools_015_4.jpg" target="_blank" class="subject-url">https://zenodo.org/records/13283645/files/Weaving_tools_015_4.jpg</a>
+                <div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 1442343 bytes</span><span style="display:block; margin-bottom:4px;">• 2779x1967</span></div></div><div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/13283645/files/Weaving_tools_015_4.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/13283645/files/Weaving_tools_015_4.jpg')"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/13283645/files/Weaving_tools_015_9.jpg" target="_blank" class="subject-url">https://zenodo.org/records/13283645/files/Weaving_tools_015_9.jpg</a>
+                <div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 4954x1409</span><span style="display:block; margin-bottom:4px;">• 1852813 bytes</span></div></div><div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/13283645/files/Weaving_tools_015_9.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/13283645/files/Weaving_tools_015_9.jpg')"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/13283645/files/Weaving_tools_015_11.jpg" target="_blank" class="subject-url">https://zenodo.org/records/13283645/files/Weaving_tools_015_11.jpg</a>
+                <div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 4337408 bytes</span><span style="display:block; margin-bottom:4px;">• 4954x3302</span></div></div><div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/13283645/files/Weaving_tools_015_11.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/13283645/files/Weaving_tools_015_11.jpg')"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/13283645/files/Weaving_tools_015_18.jpg" target="_blank" class="subject-url">https://zenodo.org/records/13283645/files/Weaving_tools_015_18.jpg</a>
+                <div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span></div></div><div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 1707757 bytes</span><span style="display:block; margin-bottom:4px;">• 4216x2810</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/13283645/files/Weaving_tools_015_18.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/13283645/files/Weaving_tools_015_18.jpg')"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/13283645/files/Weaving_tools_015_14.jpg" target="_blank" class="subject-url">https://zenodo.org/records/13283645/files/Weaving_tools_015_14.jpg</a>
+                <div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 3169x2990</span><span style="display:block; margin-bottom:4px;">• 2448584 bytes</span></div></div><div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/13283645/files/Weaving_tools_015_14.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/13283645/files/Weaving_tools_015_14.jpg')"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/13283645/files/Weaving_tools_015_1.jpg" target="_blank" class="subject-url">https://zenodo.org/records/13283645/files/Weaving_tools_015_1.jpg</a>
+                <div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div><div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 4808x2576</span><span style="display:block; margin-bottom:4px;">• 5850782 bytes</span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/13283645/files/Weaving_tools_015_1.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/13283645/files/Weaving_tools_015_1.jpg')"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/13283645/files/Weaving_tools_015_16.jpg" target="_blank" class="subject-url">https://zenodo.org/records/13283645/files/Weaving_tools_015_16.jpg</a>
+                <div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 3198x4448</span><span style="display:block; margin-bottom:4px;">• 2844512 bytes</span></div></div><div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/13283645/files/Weaving_tools_015_16.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/13283645/files/Weaving_tools_015_16.jpg')"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300247546" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300247546</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Loom</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300387427" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300387427</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• products</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://semantics.gr/authorities/ekt-item-types/mhxanhma" target="_blank" class="subject-url">http://semantics.gr/authorities/ekt-item-types/mhxanhma</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Μηχάνημα</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300386843" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300386843</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• textile art (visual works)</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://semantics.gr/authorities/ekt-unesco/1728453957" target="_blank" class="subject-url">http://semantics.gr/authorities/ekt-unesco/1728453957</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Παραδοσιακή τεχνολογία</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://semantics.gr/authorities/ekt-item-types/ergaleia-kai-eksoplismos" target="_blank" class="subject-url">http://semantics.gr/authorities/ekt-item-types/ergaleia-kai-eksoplismos</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Εργαλεία και εξοπλισμός</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300122241" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300122241</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• tools</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        <div class="file-separator"><h3> NHMA :: Weaving tool :: 004</h3></div>
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Αντικείμενο</span>
+                <a href="http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/8ef8c2a1-1fad-4f00-94c0-094e113a0324&tab=summary" target="_blank" class="subject-url">http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/8ef8c2a1-1fad-4f00-94c0-094e113a0324&tab=summary</a>
+                <div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Foundation for Research And Technology - Institute of Computer Science</span><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Αντικείμενο</span>
+                <a href="http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/8ef8c2a1-1fad-4f00-94c0-094e113a0324" target="_blank" class="subject-url">http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/8ef8c2a1-1fad-4f00-94c0-094e113a0324</a>
+                <div class="prop-row"><span class="label">Τίτλος:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• ΝΗΜΑ :: Εργαλείο υφαντικής :: 004</span><span style="display:block; margin-bottom:4px;">• NHMA :: Weaving tool :: 004</span></div></div><div class="prop-row"><span class="label">Υλικό:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Wood</span></div></div><div class="prop-row"><span class="label">Περιγραφή:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• A wooden weaving distaff crafted with care and skill. This distaff is part of the Penelope Gandhi Mission collection. It can be used both for practical weaving purposes and as a decorative element that adds a traditional touch to any space.</span><span style="display:block; margin-bottom:4px;">• Ξύλινη ρόκα υφαντικής κατασκευασμένη με προσοχή και δεξιοτεχνία. Η ρόκα αυτή αποτελεί μέρος της συλλογής της Αποστολής Πηνελόπη Gandhi. Μπορεί να χρησιμοποιηθεί τόσο για πρακτικούς σκοπούς στην υφαντική όσο και ως διακοσμητικό στοιχείο που προσθέτει μια παραδοσιακή πινελιά σε κάθε χώρο. </span></div></div><div class="prop-row"><span class="label">Τοποθεσία:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://www.geonames.org/258763/crete.html" target="_blank">https://www.geonames.org/258763/crete.html</a></span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/11561868/files/Weaving_tools_004_1.jpg" target="_blank" class="subject-url">https://zenodo.org/records/11561868/files/Weaving_tools_004_1.jpg</a>
+                <div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div><div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 1074x2048</span><span style="display:block; margin-bottom:4px;">• 746992 bytes</span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/11561868/files/Weaving_tools_004_1.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/11561868/files/Weaving_tools_004_1.jpg')"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/11561868/files/Weaving_tools_004_2.jpg" target="_blank" class="subject-url">https://zenodo.org/records/11561868/files/Weaving_tools_004_2.jpg</a>
+                <div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div><div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 763196 bytes</span><span style="display:block; margin-bottom:4px;">• 1074x2048</span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/11561868/files/Weaving_tools_004_2.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/11561868/files/Weaving_tools_004_2.jpg')"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300122241" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300122241</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• tools </span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://semantics.gr/authorities/craft-item-types/1708755776" target="_blank" class="subject-url">http://semantics.gr/authorities/craft-item-types/1708755776</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Distaff</span><span style="display:block; margin-bottom:4px;">• Ρόκα</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300387427" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300387427</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• products</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300386843" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300386843</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• textile art (visual works)</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://semantics.gr/authorities/ekt-unesco/1728453957" target="_blank" class="subject-url">http://semantics.gr/authorities/ekt-unesco/1728453957</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Παραδοσιακή τεχνολογία</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://semantics.gr/authorities/ekt-item-types/ergaleia-kai-eksoplismos" target="_blank" class="subject-url">http://semantics.gr/authorities/ekt-item-types/ergaleia-kai-eksoplismos</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Εργαλεία και εξοπλισμός</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        <div class="file-separator"><h3> NHMA :: Weaving tool :: 008</h3></div>
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Αντικείμενο</span>
+                <a href="http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/9d9ca9fe-e05a-49d3-85b3-c6428269484c" target="_blank" class="subject-url">http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/9d9ca9fe-e05a-49d3-85b3-c6428269484c</a>
+                <div class="prop-row"><span class="label">Τίτλος:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• ΝΗΜΑ :: Εργαλείο υφαντικής :: 008</span><span style="display:block; margin-bottom:4px;">• NHMA :: Weaving tool :: 008</span></div></div><div class="prop-row"><span class="label">Τοποθεσία:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://www.geonames.org/258763/crete.html" target="_blank">https://www.geonames.org/258763/crete.html</a></span></div></div><div class="prop-row"><span class="label">Υλικό:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Wood</span></div></div><div class="prop-row"><span class="label">Περιγραφή:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• A wooden weaving distaff crafted with care and skill. This distaff is part of the Penelope Gandhi Mission collection. It can be used both for practical weaving purposes and as a decorative element that adds a traditional touch to any space.</span><span style="display:block; margin-bottom:4px;">• Ξύλινη ρόκα υφαντικής κατασκευασμένη με προσοχή και δεξιοτεχνία. Η ρόκα αυτή αποτελεί μέρος της συλλογής της Αποστολής Πηνελόπη Gandhi. Μπορεί να χρησιμοποιηθεί τόσο για πρακτικούς σκοπούς στην υφαντική όσο και ως διακοσμητικό στοιχείο που προσθέτει μια παραδοσιακή πινελιά σε κάθε χώρο. </span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Αντικείμενο</span>
+                <a href="http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/9d9ca9fe-e05a-49d3-85b3-c6428269484c&tab=summary" target="_blank" class="subject-url">http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/9d9ca9fe-e05a-49d3-85b3-c6428269484c&tab=summary</a>
+                <div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span><span style="display:block; margin-bottom:4px;">• Foundation for Research And Technology - Institute of Computer Science</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/11561868/files/Weaving_tools_008_2.jpg" target="_blank" class="subject-url">https://zenodo.org/records/11561868/files/Weaving_tools_008_2.jpg</a>
+                <div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div><div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span></div></div><div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 774238 bytes</span><span style="display:block; margin-bottom:4px;">• 1099x2048</span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/11561868/files/Weaving_tools_008_2.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/11561868/files/Weaving_tools_008_2.jpg')"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/11561868/files/Weaving_tools_008_1.jpg" target="_blank" class="subject-url">https://zenodo.org/records/11561868/files/Weaving_tools_008_1.jpg</a>
+                <div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 804714 bytes</span><span style="display:block; margin-bottom:4px;">• 1099x2048</span></div></div><div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/11561868/files/Weaving_tools_008_1.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/11561868/files/Weaving_tools_008_1.jpg')"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300122241" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300122241</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• tools </span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://semantics.gr/authorities/craft-item-types/1708755776" target="_blank" class="subject-url">http://semantics.gr/authorities/craft-item-types/1708755776</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Distaff</span><span style="display:block; margin-bottom:4px;">• Ρόκα</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300387427" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300387427</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• products</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300386843" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300386843</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• textile art (visual works)</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://semantics.gr/authorities/ekt-unesco/1728453957" target="_blank" class="subject-url">http://semantics.gr/authorities/ekt-unesco/1728453957</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Παραδοσιακή τεχνολογία</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://semantics.gr/authorities/ekt-item-types/ergaleia-kai-eksoplismos" target="_blank" class="subject-url">http://semantics.gr/authorities/ekt-item-types/ergaleia-kai-eksoplismos</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Εργαλεία και εξοπλισμός</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        <div class="file-separator"><h3> NHMA :: Weaving tool :: 013</h3></div>
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Αντικείμενο</span>
+                <a href="http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/a5c90f61-9fd4-4146-b806-67da0343156e" target="_blank" class="subject-url">http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/a5c90f61-9fd4-4146-b806-67da0343156e</a>
+                <div class="prop-row"><span class="label">Περιγραφή:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Ξύλινη ρόκα υφαντικής κατασκευασμένη με προσοχή και δεξιοτεχνία. Η ρόκα αυτή αποτελεί μέρος της συλλογής της Αποστολής Πηνελόπη Gandhi. Μπορεί να χρησιμοποιηθεί τόσο για πρακτικούς σκοπούς στην υφαντική όσο και ως διακοσμητικό στοιχείο που προσθέτει μια παραδοσιακή πινελιά σε κάθε χώρο.</span><span style="display:block; margin-bottom:4px;">• A wooden weaving distaff crafted with care and skill. This distaff is part of the Penelope Gandhi Mission collection. It can be used both for practical weaving purposes and as a decorative element that adds a traditional touch to any space.</span></div></div><div class="prop-row"><span class="label">Τοποθεσία:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://www.geonames.org/258763/crete.html" target="_blank">https://www.geonames.org/258763/crete.html</a></span></div></div><div class="prop-row"><span class="label">Υλικό:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Wood</span></div></div><div class="prop-row"><span class="label">Τίτλος:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• ΝΗΜΑ :: Εργαλείο υφαντικής :: 013</span><span style="display:block; margin-bottom:4px;">• NHMA :: Weaving tool :: 013</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Αντικείμενο</span>
+                <a href="http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/a5c90f61-9fd4-4146-b806-67da0343156e&tab=summary" target="_blank" class="subject-url">http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/a5c90f61-9fd4-4146-b806-67da0343156e&tab=summary</a>
+                <div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span><span style="display:block; margin-bottom:4px;">• Foundation for Research And Technology - Institute of Computer Science</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/11561868/files/Weaving_tools_013_1.jpg" target="_blank" class="subject-url">https://zenodo.org/records/11561868/files/Weaving_tools_013_1.jpg</a>
+                <div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 954443 bytes</span><span style="display:block; margin-bottom:4px;">• 1099x2048</span></div></div><div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/11561868/files/Weaving_tools_013_1.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/11561868/files/Weaving_tools_013_1.jpg')"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/11561868/files/Weaving_tools_013_2.jpg" target="_blank" class="subject-url">https://zenodo.org/records/11561868/files/Weaving_tools_013_2.jpg</a>
+                <div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div><div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 1099x2048</span><span style="display:block; margin-bottom:4px;">• 923894 bytes</span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/11561868/files/Weaving_tools_013_2.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/11561868/files/Weaving_tools_013_2.jpg')"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300122241" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300122241</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• tools </span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://semantics.gr/authorities/craft-item-types/1708755776" target="_blank" class="subject-url">http://semantics.gr/authorities/craft-item-types/1708755776</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Distaff</span><span style="display:block; margin-bottom:4px;">• Ρόκα</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300387427" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300387427</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• products</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300386843" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300386843</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• textile art (visual works)</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://semantics.gr/authorities/ekt-unesco/1728453957" target="_blank" class="subject-url">http://semantics.gr/authorities/ekt-unesco/1728453957</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Παραδοσιακή τεχνολογία</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://semantics.gr/authorities/ekt-item-types/ergaleia-kai-eksoplismos" target="_blank" class="subject-url">http://semantics.gr/authorities/ekt-item-types/ergaleia-kai-eksoplismos</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Εργαλεία και εξοπλισμός</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        <div class="file-separator"><h3> NHMA :: Weaving tool :: 002</h3></div>
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Αντικείμενο</span>
+                <a href="http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/a7581c7d-3505-4ed7-a120-c212c02457eb" target="_blank" class="subject-url">http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/a7581c7d-3505-4ed7-a120-c212c02457eb</a>
+                <div class="prop-row"><span class="label">Περιγραφή:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Ξύλινη ρόκα υφαντικής κατασκευασμένη με προσοχή και δεξιοτεχνία. Η ρόκα αυτή αποτελεί μέρος της συλλογής της Αποστολής Πηνελόπη Gandhi. Μπορεί να χρησιμοποιηθεί τόσο για πρακτικούς σκοπούς στην υφαντική όσο και ως διακοσμητικό στοιχείο που προσθέτει μια παραδοσιακή πινελιά σε κάθε χώρο. </span><span style="display:block; margin-bottom:4px;">• A wooden weaving distaff crafted with care and skill. This distaff is part of the Penelope Gandhi Mission collection. It can be used both for practical weaving purposes and as a decorative element that adds a traditional touch to any space.</span></div></div><div class="prop-row"><span class="label">Τίτλος:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• ΝΗΜΑ :: Εργαλείο υφαντικής :: 002</span><span style="display:block; margin-bottom:4px;">• NHMA :: Weaving tool :: 002</span></div></div><div class="prop-row"><span class="label">Υλικό:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Wood</span></div></div><div class="prop-row"><span class="label">Τοποθεσία:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://www.geonames.org/258763/crete.html" target="_blank">https://www.geonames.org/258763/crete.html</a></span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Αντικείμενο</span>
+                <a href="http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/a7581c7d-3505-4ed7-a120-c212c02457eb&tab=summary" target="_blank" class="subject-url">http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/a7581c7d-3505-4ed7-a120-c212c02457eb&tab=summary</a>
+                <div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span><span style="display:block; margin-bottom:4px;">• Foundation for Research And Technology - Institute of Computer Science</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/11561868/files/Weaving_tools_002_3.jpg" target="_blank" class="subject-url">https://zenodo.org/records/11561868/files/Weaving_tools_002_3.jpg</a>
+                <div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span></div></div><div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 718952 bytes</span><span style="display:block; margin-bottom:4px;">• 1074x2048</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/11561868/files/Weaving_tools_002_3.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/11561868/files/Weaving_tools_002_3.jpg')"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/11561868/files/Weaving_tools_002_2.jpg" target="_blank" class="subject-url">https://zenodo.org/records/11561868/files/Weaving_tools_002_2.jpg</a>
+                <div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div><div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 1074x2048</span><span style="display:block; margin-bottom:4px;">• 693076 bytes</span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/11561868/files/Weaving_tools_002_2.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/11561868/files/Weaving_tools_002_2.jpg')"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/11561868/files/Weaving_tools_002_1.jpg" target="_blank" class="subject-url">https://zenodo.org/records/11561868/files/Weaving_tools_002_1.jpg</a>
+                <div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 1074x2048</span><span style="display:block; margin-bottom:4px;">• 774344 bytes</span></div></div><div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/11561868/files/Weaving_tools_002_1.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/11561868/files/Weaving_tools_002_1.jpg')"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://semantics.gr/authorities/craft-item-types/1708755776" target="_blank" class="subject-url">http://semantics.gr/authorities/craft-item-types/1708755776</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Distaff</span><span style="display:block; margin-bottom:4px;">• Ρόκα</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300387427" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300387427</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• products</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300386843" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300386843</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• textile art (visual works)</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://semantics.gr/authorities/ekt-unesco/1728453957" target="_blank" class="subject-url">http://semantics.gr/authorities/ekt-unesco/1728453957</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Παραδοσιακή τεχνολογία</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://semantics.gr/authorities/ekt-item-types/ergaleia-kai-eksoplismos" target="_blank" class="subject-url">http://semantics.gr/authorities/ekt-item-types/ergaleia-kai-eksoplismos</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Εργαλεία και εξοπλισμός</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300122241" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300122241</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• tools</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        <div class="file-separator"><h3> NHMA :: Weaving tool :: 009</h3></div>
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Αντικείμενο</span>
+                <a href="http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/a7d6b160-828a-4d7d-a6f8-57c34f7559d0" target="_blank" class="subject-url">http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/a7d6b160-828a-4d7d-a6f8-57c34f7559d0</a>
+                <div class="prop-row"><span class="label">Τίτλος:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• NHMA :: Weaving tool :: 009</span><span style="display:block; margin-bottom:4px;">• ΝΗΜΑ :: Εργαλείο υφαντικής :: 009</span></div></div><div class="prop-row"><span class="label">Τοποθεσία:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://www.geonames.org/258763/crete.html" target="_blank">https://www.geonames.org/258763/crete.html</a></span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Αντικείμενο</span>
+                <a href="http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/a7d6b160-828a-4d7d-a6f8-57c34f7559d0&tab=summary" target="_blank" class="subject-url">http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/a7d6b160-828a-4d7d-a6f8-57c34f7559d0&tab=summary</a>
+                <div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span><span style="display:block; margin-bottom:4px;">• Foundation for Research And Technology - Institute of Computer Science</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/11561868/files/Weaving_tools_009_1.jpg" target="_blank" class="subject-url">https://zenodo.org/records/11561868/files/Weaving_tools_009_1.jpg</a>
+                <div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 2446642 bytes</span><span style="display:block; margin-bottom:4px;">• 2048x1852</span></div></div><div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/11561868/files/Weaving_tools_009_1.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/11561868/files/Weaving_tools_009_1.jpg')"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300387427" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300387427</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• products</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300386843" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300386843</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• textile art (visual works)</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300122241" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300122241</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• tools </span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://semantics.gr/authorities/ekt-unesco/1728453957" target="_blank" class="subject-url">http://semantics.gr/authorities/ekt-unesco/1728453957</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Παραδοσιακή τεχνολογία</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://semantics.gr/authorities/ekt-item-types/ergaleia-kai-eksoplismos" target="_blank" class="subject-url">http://semantics.gr/authorities/ekt-item-types/ergaleia-kai-eksoplismos</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Εργαλεία και εξοπλισμός</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        <div class="file-separator"><h3> NHMA :: Weaving tool :: 006</h3></div>
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Αντικείμενο</span>
+                <a href="http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/bf620613-9631-462f-acbe-cc686ae73102" target="_blank" class="subject-url">http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/bf620613-9631-462f-acbe-cc686ae73102</a>
+                <div class="prop-row"><span class="label">Υλικό:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Wood</span></div></div><div class="prop-row"><span class="label">Περιγραφή:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• A wooden weaving distaff crafted with care and skill. This distaff is part of the Penelope Gandhi Mission collection. It can be used both for practical weaving purposes and as a decorative element that adds a traditional touch to any space.</span><span style="display:block; margin-bottom:4px;">• Ξύλινη ρόκα υφαντικής κατασκευασμένη με προσοχή και δεξιοτεχνία. Η ρόκα αυτή αποτελεί μέρος της συλλογής της Αποστολής Πηνελόπη Gandhi. Μπορεί να χρησιμοποιηθεί τόσο για πρακτικούς σκοπούς στην υφαντική όσο και ως διακοσμητικό στοιχείο που προσθέτει μια παραδοσιακή πινελιά σε κάθε χώρο. </span></div></div><div class="prop-row"><span class="label">Τίτλος:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• NHMA :: Weaving tool :: 006</span><span style="display:block; margin-bottom:4px;">• ΝΗΜΑ :: Εργαλείο υφαντικής :: 006</span></div></div><div class="prop-row"><span class="label">Τοποθεσία:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://www.geonames.org/258763/crete.html" target="_blank">https://www.geonames.org/258763/crete.html</a></span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Αντικείμενο</span>
+                <a href="http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/bf620613-9631-462f-acbe-cc686ae73102&tab=summary" target="_blank" class="subject-url">http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/bf620613-9631-462f-acbe-cc686ae73102&tab=summary</a>
+                <div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Foundation for Research And Technology - Institute of Computer Science</span><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/11561868/files/Weaving_tools_006_1.jpg" target="_blank" class="subject-url">https://zenodo.org/records/11561868/files/Weaving_tools_006_1.jpg</a>
+                <div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 763572 bytes</span><span style="display:block; margin-bottom:4px;">• 1098x2048</span></div></div><div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/11561868/files/Weaving_tools_006_1.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/11561868/files/Weaving_tools_006_1.jpg')"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/11561868/files/Weaving_tools_006_2.jpg" target="_blank" class="subject-url">https://zenodo.org/records/11561868/files/Weaving_tools_006_2.jpg</a>
+                <div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div><div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span></div></div><div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 1098x2048</span><span style="display:block; margin-bottom:4px;">• 757718 bytes</span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/11561868/files/Weaving_tools_006_2.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/11561868/files/Weaving_tools_006_2.jpg')"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300387427" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300387427</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• products</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300386843" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300386843</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• textile art (visual works)</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300122241" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300122241</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• tools </span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://semantics.gr/authorities/craft-item-types/1708755776" target="_blank" class="subject-url">http://semantics.gr/authorities/craft-item-types/1708755776</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Ρόκα </span><span style="display:block; margin-bottom:4px;">• Distaff</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        <div class="file-separator"><h3> NHMA :: Weaving tool :: 007</h3></div>
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Αντικείμενο</span>
+                <a href="http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/df5c23ed-69cd-4614-bf9c-f9bc96667d69" target="_blank" class="subject-url">http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/df5c23ed-69cd-4614-bf9c-f9bc96667d69</a>
+                <div class="prop-row"><span class="label">Υλικό:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Wood</span></div></div><div class="prop-row"><span class="label">Τοποθεσία:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://www.geonames.org/258763/crete.html" target="_blank">https://www.geonames.org/258763/crete.html</a></span></div></div><div class="prop-row"><span class="label">Τίτλος:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• NHMA :: Weaving tool :: 007</span><span style="display:block; margin-bottom:4px;">• ΝΗΜΑ :: Εργαλείο υφαντικής :: 007</span></div></div><div class="prop-row"><span class="label">Περιγραφή:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• A wooden weaving distaff crafted with care and skill. This distaff is part of the Penelope Gandhi Mission collection. It can be used both for practical weaving purposes and as a decorative element that adds a traditional touch to any space.</span><span style="display:block; margin-bottom:4px;">• Ξύλινη ρόκα υφαντικής κατασκευασμένη με προσοχή και δεξιοτεχνία. Η ρόκα αυτή αποτελεί μέρος της συλλογής της Αποστολής Πηνελόπη Gandhi. Μπορεί να χρησιμοποιηθεί τόσο για πρακτικούς σκοπούς στην υφαντική όσο και ως διακοσμητικό στοιχείο που προσθέτει μια παραδοσιακή πινελιά σε κάθε χώρο. </span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Αντικείμενο</span>
+                <a href="http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/df5c23ed-69cd-4614-bf9c-f9bc96667d69&tab=summary" target="_blank" class="subject-url">http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/df5c23ed-69cd-4614-bf9c-f9bc96667d69&tab=summary</a>
+                <div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span><span style="display:block; margin-bottom:4px;">• Foundation for Research And Technology - Institute of Computer Science</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/11561868/files/Weaving_tools_007_1.jpg" target="_blank" class="subject-url">https://zenodo.org/records/11561868/files/Weaving_tools_007_1.jpg</a>
+                <div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span></div></div><div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 1098x2048</span><span style="display:block; margin-bottom:4px;">• 762023 bytes</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/11561868/files/Weaving_tools_007_1.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/11561868/files/Weaving_tools_007_1.jpg')"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/11561868/files/Weaving_tools_007_2.jpg" target="_blank" class="subject-url">https://zenodo.org/records/11561868/files/Weaving_tools_007_2.jpg</a>
+                <div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 1098x2048</span><span style="display:block; margin-bottom:4px;">• 747754 bytes</span></div></div><div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/11561868/files/Weaving_tools_007_2.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/11561868/files/Weaving_tools_007_2.jpg')"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300122241" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300122241</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• tools </span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://semantics.gr/authorities/craft-item-types/1708755776" target="_blank" class="subject-url">http://semantics.gr/authorities/craft-item-types/1708755776</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Ρόκα </span><span style="display:block; margin-bottom:4px;">• Distaff</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300387427" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300387427</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• products</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300386843" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300386843</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• textile art (visual works)</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://semantics.gr/authorities/ekt-unesco/1728453957" target="_blank" class="subject-url">http://semantics.gr/authorities/ekt-unesco/1728453957</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Παραδοσιακή τεχνολογία</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://semantics.gr/authorities/ekt-item-types/ergaleia-kai-eksoplismos" target="_blank" class="subject-url">http://semantics.gr/authorities/ekt-item-types/ergaleia-kai-eksoplismos</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Εργαλεία και εξοπλισμός</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        <div class="file-separator"><h3> NHMA :: Weaving tool :: 010</h3></div>
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Αντικείμενο</span>
+                <a href="http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/e74aad30-f639-416a-aa60-51060cea5da3" target="_blank" class="subject-url">http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/e74aad30-f639-416a-aa60-51060cea5da3</a>
+                <div class="prop-row"><span class="label">Περιγραφή:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Ξύλινη ρόκα υφαντικής κατασκευασμένη με προσοχή και δεξιοτεχνία. Η ρόκα αυτή αποτελεί μέρος της συλλογής της Αποστολής Πηνελόπη Gandhi. Μπορεί να χρησιμοποιηθεί τόσο για πρακτικούς σκοπούς στην υφαντική όσο και ως διακοσμητικό στοιχείο που προσθέτει μια παραδοσιακή πινελιά σε κάθε χώρο. </span><span style="display:block; margin-bottom:4px;">•  A wooden weaving distaff crafted with care and skill. This distaff is part of the Penelope Gandhi Mission collection. It can be used both for practical weaving purposes and as a decorative element that adds a traditional touch to any space.</span></div></div><div class="prop-row"><span class="label">Τοποθεσία:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://www.geonames.org/258763/crete.html" target="_blank">https://www.geonames.org/258763/crete.html</a></span></div></div><div class="prop-row"><span class="label">Τίτλος:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• ΝΗΜΑ :: Εργαλείο υφαντικής :: 010</span><span style="display:block; margin-bottom:4px;">• NHMA :: Weaving tool :: 010</span></div></div><div class="prop-row"><span class="label">Υλικό:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Wood</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Αντικείμενο</span>
+                <a href="http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/e74aad30-f639-416a-aa60-51060cea5da3&tab=summary" target="_blank" class="subject-url">http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/e74aad30-f639-416a-aa60-51060cea5da3&tab=summary</a>
+                <div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span><span style="display:block; margin-bottom:4px;">• Foundation for Research And Technology - Institute of Computer Science</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/11561868/files/Weaving_tools_010_1.jpg" target="_blank" class="subject-url">https://zenodo.org/records/11561868/files/Weaving_tools_010_1.jpg</a>
+                <div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 1112212 bytes</span><span style="display:block; margin-bottom:4px;">• 1219x2048</span></div></div><div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/11561868/files/Weaving_tools_010_1.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/11561868/files/Weaving_tools_010_1.jpg')"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/11561868/files/Weaving_tools_010_2.jpg" target="_blank" class="subject-url">https://zenodo.org/records/11561868/files/Weaving_tools_010_2.jpg</a>
+                <div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span></div></div><div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 1077648 bytes</span><span style="display:block; margin-bottom:4px;">• 1219x2048</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/11561868/files/Weaving_tools_010_2.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/11561868/files/Weaving_tools_010_2.jpg')"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300122241" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300122241</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• tools </span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://semantics.gr/authorities/craft-item-types/1708755776" target="_blank" class="subject-url">http://semantics.gr/authorities/craft-item-types/1708755776</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Distaff</span><span style="display:block; margin-bottom:4px;">• Ρόκα</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300387427" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300387427</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• products</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300386843" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300386843</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• textile art (visual works)</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://semantics.gr/authorities/ekt-unesco/1728453957" target="_blank" class="subject-url">http://semantics.gr/authorities/ekt-unesco/1728453957</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Παραδοσιακή τεχνολογία</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://semantics.gr/authorities/ekt-item-types/ergaleia-kai-eksoplismos" target="_blank" class="subject-url">http://semantics.gr/authorities/ekt-item-types/ergaleia-kai-eksoplismos</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Εργαλεία και εξοπλισμός</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        <div class="file-separator"><h3> NHMA :: Weaving tool :: 014</h3></div>
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Αντικείμενο</span>
+                <a href="http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/f518366f-83d7-4ca7-9185-f9e34b569cde" target="_blank" class="subject-url">http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/f518366f-83d7-4ca7-9185-f9e34b569cde</a>
+                <div class="prop-row"><span class="label">Περιγραφή:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• The shuttles on the traditional Cretan loom, as seen in this image, are essential tools for the weaving process and are often crafted with great care. Cretan shuttles are usually wooden, long, and slender, with smooth surfaces to allow them to glide easily through the loom’s warp. In the center, there is a small groove or slot where the thread is placed, which unrolls as the shuttle passes from one end of the warp to the other.
+
+Despite their apparent simplicity, shuttles are an integral part of the weaving art and require skill to use. The Penelope Gandhi Mission, which highlights the cultural value of textile arts, also honors the unique significance of shuttles as tools that carry their own history and cultural worth through both their use and their decoration.</span><span style="display:block; margin-bottom:4px;">• Οι σαΐτες στον παραδοσιακό κρητικό αργαλειό, όπως φαίνεται και στην εικόνα αυτή, είναι σημαντικά εργαλεία για την υφαντική διαδικασία και συχνά είναι προσεγμένα στην κατασκευή τους. Οι κρητικές σαΐτες είναι συνήθως ξύλινες, μακρόστενες και λεπτές, με λείες επιφάνειες για εύκολη διέλευση μέσα από το στημόνι του αργαλειού. Στο κέντρο τους υπάρχει μια μικρή εσοχή ή υποδοχή όπου τοποθετείται το νήμα, το οποίο ξετυλίγεται καθώς η σαΐτα περνάει από τη μία άκρη του στημονιού στην άλλη.
+
+Οι σαΐτες, παρά τη φαινομενική τους απλότητα, είναι αναπόσπαστο κομμάτι της υφαντικής τέχνης και απαιτούν δεξιότητα στη χρήση τους. Η Αποστολή Πηνελόπη Gandhi, που αναδεικνύει την πολιτιστική αξία της υφαντικής τέχνης, τιμά και την ιδιαίτερη σημασία των σαϊτών ως εργαλεία που φέρουν και αυτές τη δική τους ιστορία και πολιτιστική αξία μέσα από τη χρήση και τη διακόσμησή τους.</span></div></div><div class="prop-row"><span class="label">Υλικό:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Wood</span></div></div><div class="prop-row"><span class="label">Τίτλος:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• NHMA :: Weaving tool :: 014</span><span style="display:block; margin-bottom:4px;">• ΝΗΜΑ :: Εργαλείο υφαντικής :: 014</span></div></div><div class="prop-row"><span class="label">Τοποθεσία:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://www.geonames.org/258763/crete.html" target="_blank">https://www.geonames.org/258763/crete.html</a></span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Αντικείμενο</span>
+                <a href="http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/f518366f-83d7-4ca7-9185-f9e34b569cde&tab=summary" target="_blank" class="subject-url">http://mop.mingei-project.eu/resource/?uri=http://www.mingei-project.eu/resource/f518366f-83d7-4ca7-9185-f9e34b569cde&tab=summary</a>
+                <div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span><span style="display:block; margin-bottom:4px;">• Foundation for Research And Technology - Institute of Computer Science</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/13283645/files/Weaving_tools_014_1.jpg" target="_blank" class="subject-url">https://zenodo.org/records/13283645/files/Weaving_tools_014_1.jpg</a>
+                <div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span></div></div><div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 3436740 bytes</span><span style="display:block; margin-bottom:4px;">• 3988x2602</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/13283645/files/Weaving_tools_014_1.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/13283645/files/Weaving_tools_014_1.jpg')"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/13283645/files/Weaving_tools_014_3.jpg" target="_blank" class="subject-url">https://zenodo.org/records/13283645/files/Weaving_tools_014_3.jpg</a>
+                <div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span></div></div><div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 3583320 bytes</span><span style="display:block; margin-bottom:4px;">• 3988x2602</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/13283645/files/Weaving_tools_014_3.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/13283645/files/Weaving_tools_014_3.jpg')"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/13283645/files/Weaving_tools_014_2.jpg" target="_blank" class="subject-url">https://zenodo.org/records/13283645/files/Weaving_tools_014_2.jpg</a>
+                <div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div><div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 3850457 bytes</span><span style="display:block; margin-bottom:4px;">• 3988x2602</span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/13283645/files/Weaving_tools_014_2.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/13283645/files/Weaving_tools_014_2.jpg')"></div>
+        </div>
+        
+        <div class="entity-card">
+            <div class="info-side">
+                <span class="card-label">Πρόσθετες Πληροφορίες</span>
+                <a href="https://zenodo.org/records/13283645/files/Weaving_tools_014_4.jpg" target="_blank" class="subject-url">https://zenodo.org/records/13283645/files/Weaving_tools_014_4.jpg</a>
+                <div class="prop-row"><span class="label">Συντελεστές:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Nikolaos Partarakis</span><span style="display:block; margin-bottom:4px;">• George Papadakakis</span><span style="display:block; margin-bottom:4px;">• Xenophon Zabulis</span><span style="display:block; margin-bottom:4px;">• Vasiliki Manikaki</span><span style="display:block; margin-bottom:4px;">• Varvara Terzaki - Pallikari</span></div></div><div class="prop-row"><span class="label">Μέγεθος/Ανάλυση:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• 5260x3882</span><span style="display:block; margin-bottom:4px;">• 7289249 bytes</span></div></div><div class="prop-row"><span class="label">Δικαιώματα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span></div></div>
+            </div>
+            <div class="media-side"><img src="https://zenodo.org/records/13283645/files/Weaving_tools_014_4.jpg" class="rdf-media" onclick="openLightbox('https://zenodo.org/records/13283645/files/Weaving_tools_014_4.jpg')"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300387427" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300387427</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• products</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300386843" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300386843</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• textile art (visual works)</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://semantics.gr/authorities/ekt-unesco/1728453957" target="_blank" class="subject-url">http://semantics.gr/authorities/ekt-unesco/1728453957</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Παραδοσιακή τεχνολογία</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://semantics.gr/authorities/ekt-item-types/ergaleia-kai-eksoplismos" target="_blank" class="subject-url">http://semantics.gr/authorities/ekt-item-types/ergaleia-kai-eksoplismos</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• Εργαλεία και εξοπλισμός</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+        <div class="entity-card semantic-card">
+            <div class="info-side">
+                <span class="card-label">Semantic annotations</span>
+                <a href="http://vocab.getty.edu/aat/300122241" target="_blank" class="subject-url">http://vocab.getty.edu/aat/300122241</a>
+                <div class="prop-row"><span class="label">Προεπιλεγμένη ετικέτα:</span><div class="value-text"><span style="display:block; margin-bottom:4px;">• tools</span></div></div>
+            </div>
+            <div class="media-side"></div>
+        </div>
+        
+    <div id="lightbox" onclick="this.style.display='none'">
+        <img id="lightbox-img" src="">
+    </div>
+    <script>
+        function openLightbox(src) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox').style.display = 'flex';
+        }
+        function filterData() {
+            let input = document.getElementById('searchInput').value.toLowerCase();
+            let cards = document.getElementsByClassName('entity-card');
+            for (let card of cards) {
+                card.style.display = card.innerText.toLowerCase().includes(input) ? '' : 'none';
+            }
+        }
+    </script>
+    </div></body></html>
